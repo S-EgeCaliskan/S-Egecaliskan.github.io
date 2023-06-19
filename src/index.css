@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+*{
+  font-family: 'Oxygen', sans-serif;
+  margin: 0;
+}
+
+/*smaller screens*/
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(246, 246, 246);
+
+    /* NAVBAR COMPONENTS */
+  .navbar{
+    margin: 50px auto auto auto;
+    display: flex;
+    max-width: 300px;
+    align-items: center;
+    background-color: white;
+    justify-content: space-around;
+    border-radius: 10%;
+
+  }
+  .navbar-container a{
+    text-decoration: none;
+  }
+  .photo img{
+    width: 100px;
+    display: flex;
+    padding: 3px 3px;
+    margin: 20px 20px;
+    border-radius: 10%;
+    background-color: rgb(187, 187, 187)
+  }
+  /* ABOUt ME SECTION */
+    .about-me, .project-info {
+      padding-top: 10px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .about-me p{
+      text-align: justify;
+      padding: 0 20px;
+    }
+    .about-me h2{
+      border-bottom: 1px solid;
+      margin-top: 20px;
+    }
+    .about-me h3{
+      margin-top: 15px;
+      text-decoration: underline;
+    }
+    .links{
+      margin-top: 10px;
+      min-height: 70px;
+    }
+    .links img{
+      margin: 15px 40px 10px 40px;
+    }
+    .my-skills{
+      margin-top: 10px;
+    }
+
+    .my-skills img{
+      margin: 0 10px;
+    }
+    .other-skills{
+      margin-top: 10px;
+    }
+    
+    .language-skills p{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  /* PROJECTS ON MAIN PAGE */
+    .my-projects{
+      display: flex;
+      margin-top: 10px;
+      justify-content: space-around;
+      border-bottom: 1px solid;
+    }
+    .project{
+      min-width: 125px;
+      min-height: 60px;
+      max-width: 125px;
+      max-height: 100px;
+      background-color: rgb(82, 82, 82);
+      color: white;
+      border: 2px solid white;
+      border-radius: 5%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      margin-bottom: 10px;
+    }
+    
+    /*INDIVIDUAL PROJECTS*/
+    .project-description, .project-description p, .project-description h3{
+      margin-top: 20px;
+      padding: 0 15px;
+    }
+    #project-description{
+      text-align: justify;
+    }
+    .project-info h2{
+      font-size: 20px;
+      padding: 0 10px;
+    }
+  }
+}
+
+
+/*Bigger screens*/
+@media only screen and (min-width: 601px) {
+  body {
+    background-color: rgb(246, 246, 246);
+  }
+  /* NAVBAR COMPONENTS */
+    .navbar{
+      max-width: 500px;
+      min-height: 150px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: white;
+    }
+    .navbar-container a{
+      text-decoration: none;
+    }
+    .photo img{
+      width: 100px;
+      display: flex;
+      padding: 5px 5px;
+      margin: 25px 25px;
+      border-radius: 10%;
+      background-color: rgb(187, 187, 187)
+    }
+
+  /* ABOUt ME SECTION */
+    .about-me, .project-info {
+      padding-top: 50px;
+      max-width: 1000px;
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 17px;
+    }    
+    
+    .about-me p{
+      text-align: justify;
+      padding: 0 20px;
+    }
+    .about-me h2{
+      border-bottom: 1px solid;
+      margin-top: 20px;
+    }
+    
+    .about-me h3{
+      margin-top: 15px;
+      text-decoration: underline;
+    }
+
+    .links{
+      margin-top: 10px;
+      min-height: 80px;
+    }
+    .links img{
+      margin: 15px 40px 10px 40px;
+    }
+    .links img:hover{
+      width: 150px;
+      border: 2px solid rgb(0, 38, 255);
+    }
+
+    .my-skills{
+      padding: 0px 10px;
+      min-width: 600px;
+    }
+    .my-skills img{
+      margin: 10px 10px;
+    }
+
+    .other-skills{
+      margin-top: 10px;
+    }
+    .language-skills p{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  /* PROJECTS ON MAIN PAGE*/
+    .my-projects{
+      display: flex;
+      justify-content: center;
+    }
+    .project{
+      min-width: 150px;
+      min-height: 150px;
+      max-width: 150px;
+      margin: 10px 55px 0px 55px;
+
+      border-radius: 15%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      background-color: rgb(82, 82, 82);
+      color: white;
+      border: 2px solid white;
+    }
+
+    .project:hover{
+      transform: rotateY(360deg);  
+      transition: transform 0.5s;
+      transition-delay: 0.01s;
+      transition-timing-function: ease-in;
+      border: 2px solid rgb(0, 38, 255);;
+      background-color: white;
+      color: rgb(82, 82, 82);
+    }
+    /* INDIVIDUAL PROJECTS */
+      .project-description, .project-description p, .project-description h3{
+        margin-top: 20px;
+      }
+      #project-description{
+        text-align: justify;
+      }
+
+}
+
+
