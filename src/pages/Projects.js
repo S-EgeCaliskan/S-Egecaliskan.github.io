@@ -8,8 +8,8 @@ const Projects = ({ projects }) => {
             <div className="my-projects">
                 {projects.data.map((project) => (
                     <HashLink to={`/project/${project.id}`} key={project.id}>
-                        <div className="project">{project.name}
-                        </div>
+                        <span className="project">{project.name}
+                        </span>
                     </HashLink>
                 ))}
             </div>

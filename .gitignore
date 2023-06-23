@@ -22,4 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+
+/src/data.json
 /src/pages/images/CV_p.jpg

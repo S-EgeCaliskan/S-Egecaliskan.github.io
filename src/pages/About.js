@@ -9,7 +9,7 @@ import mysqlBadge from "./images/mysql.svg"
 import githubBadge from "./images/github.svg"
 import { useState } from "react";
 import Projects from "./Projects";
-import data from "./data.json"
+import data from "../data.json"
 
 const About = () => {
 
@@ -18,13 +18,12 @@ const About = () => {
 
     const [projects, setProjects] = useState(data)
 
-
     return (
         <div className="about-me">
             <h2>About me</h2>
             <div className="links">
-                <a href={myLinkedIn} target="_blank"><img src={linkedInBadge} alt="linkedin badge" /></a>
-                <a href={myGithub} target="_blank"><img src={githubBadge} alt="github badge" /></a>
+                <a href={myLinkedIn}><img src={linkedInBadge} alt="linkedin badge" /></a>
+                <a href={myGithub} ><img src={githubBadge} alt="github badge" /></a>
             </div>
             <div className="personal-statement">
                 <p>Though I do not have an IT background, I have taught myself programming,
@@ -37,9 +36,9 @@ const About = () => {
             </div>
             <h3>My stack:</h3>
             <div className="my-skills">
+                <span><img src={reactBadge} alt="react badge" /></span>
                 <span><img src={pythonBadge} alt="python badge" /></span>
                 <span><img src={djangoBadge} alt="django badge" /></span>
-                <span><img src={reactBadge} alt="react badge" /></span>
                 <span><img src={javascriptBadge} alt="javascript badge" /></span>
                 <span><img src={css3Badge} alt="css3 badge" /></span>
                 <span><img src={htmlBadge} alt="html5 badge" /></span>

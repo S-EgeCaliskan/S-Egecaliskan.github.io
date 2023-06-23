@@ -6,8 +6,9 @@
   margin: 0;
 }
 
+
 /*smaller screens*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   body {
     background-color: rgb(250, 250, 250);
   }
@@ -15,7 +16,7 @@
   .navbar{
     margin: 50px auto auto auto;
     display: flex;
-    max-width: 300px;
+    max-width: 500px;
     align-items: center;
     justify-content: space-around;
     color: rgb(82, 82, 82); ;
@@ -67,17 +68,18 @@
       margin-bottom: 20px;
     }
   /* PROJECTS ON MAIN PAGE */
+
     .my-projects{
       display: flex;
-      margin-top: 10px;
-      justify-content: space-around;
+      justify-content: center;
+      flex-flow: wrap;
       border-bottom: 1px solid;
     }
     .project{
-      min-width: 100px;
       min-height: 60px;
+      min-width: 150px;
       max-width: 150px;
-      max-height: 100px;
+      margin: 10px 10px;
       background-color: rgb(102, 143, 151);
       color: white;
       border: 2px solid white;
@@ -104,7 +106,7 @@
 
 
 /*Bigger screens*/
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 701px) {
   body {
     background-color: rgb(250, 250, 250);
   }
