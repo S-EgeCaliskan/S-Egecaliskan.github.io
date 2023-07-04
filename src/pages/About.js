@@ -26,12 +26,12 @@ const About = () => {
                 <a href={myGithub} ><img src={githubBadge} alt="github badge" /></a>
             </div>
             <div className="personal-statement">
-                <p>Though I do not have an IT background, I have taught myself programming,
-                    mainly using Python. I then picked up JavaScript, HTML, CSS, some C# along the way, as well as Django and React. I also learned version controlling with git. <br /><br />
+                <p>Though I do not have an IT background, I got into programming with HTML and CSS, after which I learned JavaScript. After these I picked up
+                    Python, React, Django and even some C# along the way. I also learned version controlling with git. <br /><br />
                     It is my passion to code, and I hope to make a career shift
                     into the world of software development. Eager to learn, I never shy away from
                     new challenges. I finished several personal projects, some of which can be found below, using different technologies I learned. My versatile skill set and experience show my willingness to
-                    work to the best of my abilities. Through good coaching, I could make a great
+                    work to the best of my abilities. Through good feedback and coaching, I could make a great
                     asset to my future team.</p>
             </div>
             <h3>My stack:</h3>

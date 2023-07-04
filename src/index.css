@@ -6,7 +6,6 @@
   margin: 0;
 }
 
-
 /*smaller screens*/
 @media only screen and (max-width: 700px) {
   body {
@@ -189,9 +188,6 @@
     .project{
       min-width: 150px;
       min-height: 100px;
-      max-width: 150px;
-      max-height: 100px;
-      margin: 10px 55px 0px 55px;
       border-radius: 15%;
       align-items: center;
       justify-content: center;
@@ -200,7 +196,10 @@
       color: white;
       border: 2px solid white;
     }
+    a{
+      margin: 10px 55px 0px 55px;
 
+    }
     .project:hover{
       transform: rotateX(360deg);  
       transition: transform 0.2s;
